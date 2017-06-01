@@ -13,10 +13,10 @@ namespace ScrabbleScore.Objects
     //   _userInput = userInput;
     // }
 
-    // public bool GetScrabbleScore(string userInput)
-    // {
-    //   return true;
-    // }
+    public bool GetScrabbleScore(string userInput)
+    {
+      return true;
+    }
 
   }
 }
