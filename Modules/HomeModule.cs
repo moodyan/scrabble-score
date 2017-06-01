@@ -11,7 +11,12 @@ namespace ScrabbleScore.Objects
       Get["/"] = _ => {
       return View["index.cshtml"];
       };
-
+      
+      Post["/"] = _ => {
+      Scrabble newScrabble = new Scrabble();
+      int output = newScrabble.GetScrabbleScore(Request.Form["user-input"]);
+      return View["index.cshtml", output];
+      };
     }
   }
 }
